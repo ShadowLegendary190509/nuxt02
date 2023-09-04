@@ -17,10 +17,10 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
           <NuxtLink v-for="item in navigation" :key="item.name" :href="item.href"
-            class="text-sm font-semibold leading-6 text-gray-900">{{ item.name }}</NuxtLink>
+            class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+          <NuxtLink href="#" class="text-sm font-semibold leading-6 text-gray-100">Log in <span
               aria-hidden="true">&rarr;</span></NuxtLink>
         </div>
       </nav>
@@ -42,7 +42,7 @@
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <NuxtLink v-for="item in navigation" :key="item.name" :href="item.href"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50">
                   {{ item.name }}</NuxtLink>
               </div>
               <div class="py-6">
