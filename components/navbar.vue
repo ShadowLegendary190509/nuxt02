@@ -17,10 +17,10 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
           <NuxtLink v-for="item in navigation" :key="item.name" :href="item.href"
-            class="text-sm font-semibold leading-6 text-gray-100">{{ item.name }}</NuxtLink>
+            class="text-sm font-semibold leading-6 text-gray-600">{{ item.name }}</NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink href="#" class="text-sm font-semibold leading-6 text-gray-100">Log in <span
+          <NuxtLink href="/download" class="text-sm font-semibold leading-6 text-gray-600">Download <span
               aria-hidden="true">&rarr;</span></NuxtLink>
         </div>
       </nav>
@@ -64,10 +64,11 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Download', href: '/download' },
-  { name: 'Marketplace', href: '/marketplace' },
-  { name: 'Forums', href: '/forums' },
-  { name: 'Support', href: '/support' },
+  { name: 'Store', href: '/store' },
+  { name: 'News', href: '/news' },
+  { name: 'FAQ', href: '/faq' },
+  { name: 'Help', href: '/help' },
+  { name: 'About', href: '/about' }
 ]
 
 const mobileMenuOpen = ref(false)
